@@ -6,6 +6,7 @@ build.ninja
 cmake*
 CMake*
 CTest*
+.ninja*
 
 # misc
 .swp
