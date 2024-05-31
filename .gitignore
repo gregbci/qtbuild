@@ -1,0 +1,11 @@
+
+# Qt configure and build output
+qt*
+config*
+build.ninja
+cmake*
+CMake*
+CTest*
+
+# misc
+.swp

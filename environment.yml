@@ -5,3 +5,7 @@ dependencies:
   - python=3.11
   - html5lib
   - cmake
+  - ninja
+  - gperf
+  - bison
+  - flex
