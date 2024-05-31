@@ -1,0 +1,7 @@
+name: qtbuild
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - html5lib
+  - cmake
