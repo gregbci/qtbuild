@@ -23,7 +23,7 @@ conda activate qtbuild
 configure build
 use prefix to set qt install location someplace pyqt build can access it
 
-/tmp/qt-everywhere-src-6.7.1/configure -webengine-proprietary-codecs -prefix ../qt
+/tmp/qt-everywhere-src-6.7.1/configure -webengine-proprietary-codecs -prefix ~/Documents/Code/qt
 
 build it
 
