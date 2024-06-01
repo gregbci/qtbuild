@@ -1,4 +1,4 @@
-# Qt and PyQt build instructions
+# Qt build instructions
 
 # macOS
 
