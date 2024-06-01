@@ -1,7 +1,8 @@
-# Qt build instructions
+# Qt and PySide build instructions
 
-# macOS
+## macOS
 
+### Qt
 Need macOS Sonoma 14.x to get Xcode 15.4 and build tools.  In particular, older versions of the linker that comes with Xcode will fail with the error "ld: unknown option: -no_warn_duplicate_libraries"d".
 
 
@@ -32,3 +33,31 @@ cmake --build . --parallel
 install it (to -prefix)
 
 cmake --install .
+
+
+### PySide
+
+Instructions: https://doc.qt.io/qtforpython-6/gettingstarted/macOS.html
+
+Repo instructions are better: https://github.com/qtproject/pyside-pyside-setup
+
+
+Download libclang provided by Qt: https://download.qt.io/development_releases/prebuilt/libclang/.
+unzip someplace 
+
+export LLVM_INSTALL_DIR=~/Downloads/libclang
+
+Using same conda environment qtbuild:
+
+git clone https://code.qt.io/pyside/pyside-setup
+
+cd pyside-setup
+
+git checkout 6.7.1
+
+pip install -r requirements.txt
+
+build pyside using Qt we built:
+
+python setup.py build --qtpaths=/Users/gregwilding/Documents/Code/qt/bin/qtpaths6 --build-tests --parallel=8
+
