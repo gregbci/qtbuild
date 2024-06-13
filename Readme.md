@@ -59,5 +59,11 @@ pip install -r requirements.txt
 
 build pyside using Qt we built:
 
-python setup.py build --qtpaths=/Users/gregwilding/Documents/Code/qt/bin/qtpaths6 --build-tests --parallel=8
+python setup.py build --qtpaths=/Users/gregwilding/Documents/Code/qt/bin/qtpaths --parallel=8
+
+Note - The first time you run this, macOS will prevent libclang.dylib from being dynamically linked because it's not signed properly.  To bypass the security check, go to Settings -> Privacy & Security -> Security (scroll down).  The library will be listed here with an "allow anyway" button.  Press it and redo the build.
+
+Note - it seems like some tests were failing with shitboken6, so i disabled by removing --build-tests from the setup.py command line.
+
+
 
