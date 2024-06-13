@@ -65,5 +65,13 @@ Note - The first time you run this, macOS will prevent libclang.dylib from being
 
 Note - it seems like some tests were failing with shitboken6, so i disabled by removing --build-tests from the setup.py command line.
 
+install pyside locally with:
+
+python setup.py install --qtpaths=/Users/gregwilding/Documents/Code/qt/bin/qtpaths --parallel=8
+
+
+Finally, test that pyside + qt webengine works with this test: 
+
+python examples/webenginequick/nanobrowser/quicknanobrowser.py
 
 
