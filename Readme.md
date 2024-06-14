@@ -3,6 +3,8 @@
 ## macOS
 
 ### Qt
+Instructions here: https://doc.qt.io/qt-6/macos-building.html
+
 Need macOS Sonoma 14.x to get Xcode 15.4 and build tools.  In particular, older versions of the linker that comes with Xcode will fail with the error "ld: unknown option: -no_warn_duplicate_libraries"d".
 
 
