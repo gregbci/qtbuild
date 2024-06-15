@@ -77,3 +77,9 @@ Finally, test that pyside + qt webengine works with this test:
 python examples/webenginequick/nanobrowser/quicknanobrowser.py
 
 
+## Windows
+
+Get a VirtualBox VM from here: https://developer.microsoft.com/en-us/windows/downloads/virtual-machines/, fire it up on an x86 mac.
+
+
+
